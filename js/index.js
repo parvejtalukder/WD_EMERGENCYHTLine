@@ -42,19 +42,19 @@ function copyClicked(id, num) {
 
 function historyOfCall(txt, number) {
     const text = getString(txt);
-    const numb = getString(num);
+    const numb = getString(number);
     let call = {
        To: text,
        Num: numb,
        Time: new Date().toLocaleTimeString()
     };
     callHistoryData.push(call);
-    console.log(call);
+    // console.log(call);
 }
 
 function historyDisplay() {
     const HistoryDivHead = getElement("historyDiv");
-    historyDisplay.innerHTML = "";
+    HistoryDivHead.innerHTML = "";
     for(const data of callHistoryData) {
         const Div = document.createElement("div");
         Div.innerHTML = `
@@ -73,6 +73,16 @@ function historyDisplay() {
     }
 }
 
+function toClear() {
+    getElement("clearBtn").addEventListener("click", function(event){
+        event.stopPropagation();
+        const HistoryDivHead = getElement("historyDiv");
+        HistoryDivHead.innerHTML = " ";
+        callHistoryData.length = 0; 
+        
+    })
+}
+
 function clickedCall(id, txt, num) {
     getElement(id).addEventListener("click", function(event) {
         event.stopPropagation();
@@ -82,7 +92,7 @@ function clickedCall(id, txt, num) {
             coinBalance -= 20;
             getElement("coinHave").innerText = coinBalance;
             alert(`📞 Calling ${text} ${number}...`);
-            historyOfCall(txt, number);
+            historyOfCall(txt, num);
             historyDisplay();
         } else {
             alert(`Balance Insufficient, You Must Have 20 Coin!`);
@@ -133,3 +143,4 @@ function callButtons() {
 callButtons(); 
 heartButtons();
 copyButtons();
+toClear();
