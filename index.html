@@ -21,7 +21,7 @@
             <div class="flex justify-around items-center gap-5">
                 <button class="w-[90px] h-[50px] flex justify-center items-center p-3 rounded-[50px] bg-[rgba(65,255,107,0.1)] gap-2.5 text-[16px] font-extrabold"><span id="heartCount">0</span> <img src="./assets/heart.png" alt="heart" class="w-[30px]"></button>
                 <button class="w-[90px] h-[50px] flex justify-center items-center p-3 rounded-[50px] bg-[rgba(65,255,107,0.1)] gap-2.5 font-extrabold"><span id="coinHave">100</span> <img src="./assets/coin.png" alt="coin" class="w-[30px]"></button>
-                <button id="copyBtn" class="w-[90px] h-[50px] p-3 rounded-[50px] bg-[#00A63E] font-semibold text-white"><span id="copiedTxt">0</span> Copy</button>
+                <button class="w-[90px] h-[50px] p-3 rounded-[50px] bg-[#00A63E] font-semibold text-white"><span id="textCopied">0</span> Copy</button>
             </div>
         </div>
     </header>
@@ -54,21 +54,21 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/emergency.png" alt="emergency" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" class="w-6 heartBtnCount" id="emerHeart">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
-                                <h2 class="font-bold text-xl">National Emergency Number</h2>
-                                <p class="font-normal text-[18px] text-[#5C5C5C]">National Emergency</p>
+                                <h2 class="font-bold text-xl" >National Emergency Number</h2>
+                                <p class="font-normal text-[18px] text-[#5C5C5C]" id="nationalEmergencyTxt">National Emergency</p>
                                 <!-- CARDS NUMBER AND CATEGORY  -->
                                 <div class="mt-6 flex flex-col">
-                                    <h1 class="font-bold text-[32px]">999</h1>
-                                    <button class="rounded-full bg-gray-100 w-[53px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]"> All</button>
+                                    <h1 id="nationalEmergencyNum" class="font-bold text-[32px]">999</h1>
+                                    <button class="rounded-full bg-gray-100 w-[53px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]">All</button>
                                 </div>
                                 <!-- CARD's COPY & CALL BUTTON -->
                                 <div class="flex justify-between items-center gap-2 mt-6">
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
+                                    <button id="emergencyCopyBtn" class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" class="w-4">Copy</button>
+                                    <button id="nationalEmergencyCall" class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
                                 </div>
                             </div>
                         </div>
@@ -79,21 +79,21 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/police.png" alt="polic" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" class="w-6" id="policHeart">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
                                 <h2 class="font-bold text-xl">Police Helpline Number</h2>
-                                <p class="font-normal text-[18px] text-[#5C5C5C]">Police</p>
+                                <p class="font-normal text-[18px] text-[#5C5C5C]" id="policTxt">Police</p>
                                 <!-- CARDS NUMBER AND CATEGORY  -->
                                 <div class="mt-6 flex flex-col">
-                                    <h1 class="font-bold text-[32px]">999</h1>
-                                    <button class="rounded-full bg-gray-100 w-[53px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]"> All</button>
+                                    <h1 class="font-bold text-[32px]" id="policNum">999</h1>
+                                    <button class="rounded-full bg-gray-100 w-[70px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]">Police</button>
                                 </div>
                                 <!-- CARD's COPY & CALL BUTTON -->
                                 <div class="flex justify-between items-center gap-2 mt-6">
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
+                                    <button class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white" id="policCopyBtn"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
+                                    <button id="policCall" class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
                                 </div>
                             </div>
                         </div>
@@ -104,21 +104,21 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/fire-service.png" alt="emergency" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" class="w-6" id="fireHeart">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
                                 <h2 class="font-bold text-xl">Fire Service Number</h2>
-                                <p class="font-normal text-[18px] text-[#5C5C5C]">Fire Service</p>
+                                <p id="fireTxt" class="font-normal text-[18px] text-[#5C5C5C]">Fire Service</p>
                                 <!-- CARDS NUMBER AND CATEGORY  -->
                                 <div class="mt-6 flex flex-col">
-                                    <h1 class="font-bold text-[32px]">999</h1>
-                                    <button class="rounded-full bg-gray-100 w-[53px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]"> All</button>
+                                    <h1 id="fireNum" class="font-bold text-[32px]">999</h1>
+                                    <button class="rounded-full bg-gray-100 w-[60px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]">Fire</button>
                                 </div>
                                 <!-- CARD's COPY & CALL BUTTON -->
                                 <div class="flex justify-between items-center gap-2 mt-6">
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
+                                    <button id="fireCopyBtn" class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
+                                    <button id="fireCallBtn" class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
                                 </div>
                             </div>
                         </div>
@@ -129,21 +129,21 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/ambulance.png" alt="AMBULANCE" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" id="ambulanceHeart" class="w-6">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
                                 <h2 class="font-bold text-xl">Ambulance Service</h2>
-                                <p class="font-normal text-[18px] text-[#5C5C5C]">Ambulance</p>
+                                <p id="ambulanceTxt" class="font-normal text-[18px] text-[#5C5C5C]">Ambulance</p>
                                 <!-- CARDS NUMBER AND CATEGORY  -->
                                 <div class="mt-6 flex flex-col">
-                                    <h1 class="font-bold text-[32px]">999</h1>
-                                    <button class="rounded-full bg-gray-100 w-[53px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]"> All</button>
+                                    <h1 id="ambulanceNum" class="font-bold text-[32px]">1994-999999</h1>
+                                    <button class="rounded-full bg-gray-100 w-[75px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]">Health</button>
                                 </div>
                                 <!-- CARD's COPY & CALL BUTTON -->
                                 <div class="flex justify-between items-center gap-2 mt-6">
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
+                                    <button id="ambulanceCopyBtn" class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
+                                    <button id="ambulanceNumCallBtn" class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
                                 </div>
                             </div>
                         </div>
@@ -154,21 +154,21 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/emergency.png" alt="Women" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" id="womenHeart" class="w-6">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
                                 <h2 class="font-bold text-xl">Women & Child Helpline</h2>
-                                <p class="font-normal text-[18px] text-[#5C5C5C]">Women & Child Helpline</p>
+                                <p id="womenTxt" class="font-normal text-[18px] text-[#5C5C5C]">Women & Child Helpline</p>
                                 <!-- CARDS NUMBER AND CATEGORY  -->
                                 <div class="mt-6 flex flex-col">
-                                    <h1 class="font-bold text-[32px]">1994-999999</h1>
-                                    <button class="rounded-full bg-gray-100 w-[53px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]">Health</button>
+                                    <h1 id="womenNum" class="font-bold text-[32px]">109</h1>
+                                    <button class="rounded-full bg-gray-100 w-[60px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]">Help</button>
                                 </div>
                                 <!-- CARD's COPY & CALL BUTTON -->
                                 <div class="flex justify-between items-center gap-2 mt-6">
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
+                                    <button id="womenCopyBtn" class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
+                                    <button id="womenCallBtn" class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
                                 </div>
                             </div>
                         </div>
@@ -179,21 +179,21 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/emergency.png" alt="Women" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" id="achHeart" class="w-6">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
                                 <h2 class="font-bold text-xl">Anti-Corruption Helpline</h2>
-                                <p class="font-normal text-[18px] text-[#5C5C5C]">Anti-Corruption Helpline</p>
+                                <p id="achTxt" class="font-normal text-[18px] text-[#5C5C5C]">Anti-Corruption Helpline</p>
                                 <!-- CARDS NUMBER AND CATEGORY  -->
                                 <div class="mt-6 flex flex-col">
-                                    <h1 class="font-bold text-[32px]">109</h1>
+                                    <h1 id="achNum" class="font-bold text-[32px]">106</h1>
                                     <button class="rounded-full bg-gray-100 w-[60px] h-[37px] flex items-center justify-center py-1.5 px-4 text-[18px] text-[#5C5C5C]">Govt.</button>
                                 </div>
                                 <!-- CARD's COPY & CALL BUTTON -->
                                 <div class="flex justify-between items-center gap-2 mt-6">
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
-                                    <button class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
+                                    <button id="achCopyBtn" class="w-[182.33px] h-10 flex justify-center items-center p-4 border border-[#D4D6D5] rounded-lg bg-white"><img src="./assets/copy-regular-full.svg" alt="copy" id="copyBtn" class="w-4">Copy</button>
+                                    <button id="achCallBtn" class="w-[182.33px] h-10 flex justify-center items-center gap-1 p-4 rounded-lg bg-[#00A63E] text-white text-[16px] font-normal"><img src="./assets/call.png" alt="call" class="w-4">Call</button>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/emergency.png" alt="" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" id="elecHeart" class="w-6">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
@@ -229,7 +229,7 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/brac.png" alt="brac" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" id="bracHeart" class="w-6">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
@@ -254,7 +254,7 @@
                                 <div class="rounded-2xl bg-[#FFE3E2] w-[60px] h-[60px] flex items-center justify-center">
                                     <img src="./assets/emergency.png" alt="brac" class="w-8">
                                 </div>
-                                <img src="./assets/heartOfCard.png" alt="heartFree" id="heartBtn" class="w-6">
+                                <img src="./assets/heartOfCard.png" alt="heartFree" id="railHeart" class="w-6">
                             </div>
                             <!-- CARD TXT -->
                             <div class="mt-4">
@@ -336,5 +336,7 @@
             </section>     
         </section>
     </main>
+<!-- JS  -->
+<script src="./js/index.js"></script>
 </body>
 </html>
