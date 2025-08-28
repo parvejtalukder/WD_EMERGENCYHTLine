@@ -19,13 +19,13 @@
                 <p class="text-[#006747] font-extrabold text-2xl leading-6">Emergency <br> Service</p>
             </div>
             <div class="flex justify-around items-center gap-5">
-                <button class="w-[120px] h-[50px] flex justify-center items-center p-3 rounded-[50px] bg-[rgba(65,255,107,0.1)] gap-2.5 text-[16px] font-extrabold"><span id="heartCount">0</span> <img src="./assets/heart.png" alt="heart" class="w-[30px]"></button>
-                <button class="w-[120px] h-[50px] flex justify-center items-center p-3 rounded-[50px] bg-[rgba(65,255,107,0.1)] gap-2.5 font-extrabold"><span id="coinHave">100</span> <img src="./assets/coin.png" alt="coin" class="w-[30px]"></button>
-                <button id="copyBtn" class="w-[120px] h-[50px] p-3 rounded-[50px] bg-[#00A63E] font-semibold text-white"><span id="copiedTxt">0</span> Copy</button>
+                <button class="w-[90px] h-[50px] flex justify-center items-center p-3 rounded-[50px] bg-[rgba(65,255,107,0.1)] gap-2.5 text-[16px] font-extrabold"><span id="heartCount">0</span> <img src="./assets/heart.png" alt="heart" class="w-[30px]"></button>
+                <button class="w-[90px] h-[50px] flex justify-center items-center p-3 rounded-[50px] bg-[rgba(65,255,107,0.1)] gap-2.5 font-extrabold"><span id="coinHave">100</span> <img src="./assets/coin.png" alt="coin" class="w-[30px]"></button>
+                <button id="copyBtn" class="w-[90px] h-[50px] p-3 rounded-[50px] bg-[#00A63E] font-semibold text-white"><span id="copiedTxt">0</span> Copy</button>
             </div>
         </div>
     </header>
-    <main>
+    <main> 
         <!-- HERO SECTION  -->
         <section>
             <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
@@ -34,7 +34,7 @@
                         <img src="./assets/logo-dark.png" alt="HERO_LOGO" class="w-[90px]">
                     </figure>
                     <div class="text-center">
-                        <h2 class="text-white text-[40px] font-bold">Emergency Service Directory</h2>
+                        <h2 class="text-white text-[30px] lg:text-[40px] font-bold">Emergency Service Directory</h2>
                         <p class="text-white text-xl font-semibold">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
         </section>
         <!-- SERVICES SECTION -->
         <section class="bg-[#F3FAF8]">
-            <section class="mx-auto lg:py-[42px] lg:w-11/12 lg:grid lg:grid-cols-12 lg:gap-3 lg:max-h-[1350px]">
+            <section class="mx-auto lg:py-[42px] lg:w-11/12 lg:grid lg:grid-cols-12 lg:gap-3 lg:max-h-full">
                 <section class="col-span-9">
                     <!-- CARDS  -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px] p-6">
@@ -274,8 +274,8 @@
                         </div>
                     </div>
                 </section>
-            <aside class="col-span-3 lg:h-[1350px]">
-                <section class="bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-8 m-6">
+            <aside class="col-span-3">
+                <section class="bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-8 m-6 lg:min-h-[1160px] lg:max-h-full">
                     <div class="flex justify-between items-center">
                         <div class="flex justify-center items-center gap-2">
                             <img src="./assets/history.png" alt="" class="w-6">
@@ -295,6 +295,15 @@
                      <!-- HISTORIES -->
                     <div>
                         <div class="w-full h-[75px] rounded-[8px] bg-[#FAFAFA] my-[10px] p-[10px]">
+                        <div class="flex justify-between items-center">
+                            <div class="flex flex-col text-left items-start">
+                                <h2 class="font-bold text-[18px]">Police</h2>
+                                <p class="text-[18px] text-[#5C5C5C]">999</p>
+                            </div>
+                            <p class="text-[18px]">11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-[75px] rounded-[8px] bg-[#FAFAFA] my-[10px] p-[10px]">
                         <div class="flex justify-between items-center">
                             <div class="flex flex-col text-left items-start">
                                 <h2 class="font-bold text-[18px]">Police</h2>
