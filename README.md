@@ -1,0 +1,2 @@
+# What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+**getElementById** is the way to get an only element using an ID as ID can used in only one element, **getElementsByClassName** can find many elment using Class as Class can  used by many elements of HTML, and **querySelector** / **querySelectorAll**  Use CSS selector to find static or first elements. 
