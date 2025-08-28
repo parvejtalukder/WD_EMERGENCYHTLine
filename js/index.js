@@ -42,10 +42,10 @@ function copyClicked(id, num) {
 
 function historyOfCall(txt, number) {
     const text = getString(txt);
-    const number = getString(num);
+    const numb = getString(num);
     let call = {
        To: text,
-       Num: number,
+       Num: numb,
        Time: new Date().toLocaleTimeString()
     };
     callHistoryData.push(call);
