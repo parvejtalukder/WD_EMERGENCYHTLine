@@ -58,7 +58,7 @@ function historyDisplay() {
     for(const data of callHistoryData) {
         const Div = document.createElement("div");
         Div.innerHTML = `
-        <div class="w-full h-[75px] rounded-[8px] bg-[#FAFAFA] my-[10px] p-[10px]">
+        <div class="w-full h-auto rounded-[8px] bg-[#FAFAFA] my-[10px] p-[10px]">
             <div class="flex justify-between items-center">
                     <div class="flex flex-col text-left items-start">
                             <h2 class="font-bold text-[18px]">${data.To}</h2>
